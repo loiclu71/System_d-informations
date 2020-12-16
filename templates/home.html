@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de livres</title>
+    {% block css%}
+
+    {% endblock %}
+</head>
+<style>
+
+</style>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Gestion de livres</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Livres <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Author</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Jason</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div clss="col-mid-3">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">
+                    Main Page
+                </a>
+                <a href="#" class="list-group-item">Book List</a>
+                <a href="#" class="list-group-item">Company List</a>
+                <a href="#" class="list-group-item">Author List</a>
+                <a href="#" class="list-group-item">More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-mid-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">BMS</h3>
+            </div>
+            <div class="panel-body">
+                {% block content %}
+                    <div class="jumbotron">
+                        <h1>Welcome to out system de gestion de livres</h1>
+                        <p>Welcome to your home!</p>
+                        <p><a class="btn btn-primary btn-lg" href="#" role="button">Please Click!</a></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://www.baidu.com/link?url=mYPQic8GYj9qkMjN24FE8Z4lF7jIZ5a5qO_jBpWhVOoZP1DpWj2kpKhZke0bQ3P5obxLxLmuTfa7zsIHne59UY2lo2wZVUzvMJDZyi3Xuda6UdW3CFdRSSvf-lcJD2kmn0vohZhKkYYLV_XFyx9e1Fiv2Z5Q4jP3DV6pdpA0VONu64WQsX5MHhcaw1RMArWss3cP87XvHDoy2nK1J-_BOwjGbV4LeuitLioiHfLN60FDduHJ1tXl2BDVdPmrAMTWX_VS-6wrDEkTJabsuc1JyPn4NBZO5_fUZhY6X1hApFPTXqU6X_C5zI-BPqbUU5vU-yBtgicQkz33J1a1EF3Gc5SKEr3TYmk2FVuT_5O_DOKEp91wJtnIhBRtODvBSwvgeIXeE9lSy58CAUJHEsUOEhUhyp40GanUYYuzEI6zl8iTNlY2ac0TK-KrJpeogYvVLSgYRVyt9tiLdKultDENewUjMJl_w98frvv6nfHQ7MtEmGNUvEvBHVJwHAUInH_q69RG44ytE3VTuiWmG4qAK8JAelSequSyHIgQRXbgvPYj3Ooq37AjwZV3o2J9XNTVClLh0CfV7IlM-otT4tXs7A8dnLXqL6YnA-3x_qx3BH3&timg=&click_t=1608147071146&s_info=1324_814&wd=&eqid=f07427010004cf88000000065fda607b" alt="...">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>...</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://www.baidu.com/link?url=j_GX2edFX4SCeiXtYojciQPEPyWNd6qVymio7r6xyve7cKVNVqkfp3JqGSaAd1p-z0upft1ItbukQGLrqR769PrqvcpUi2Pn9Nz5oYJZ8uYxr8ta0aYLOWn2-0aTySzRFAE2rEswXD3-V2w8BYC6bUgwlDrBAJgOuQUpKb-qGPwgxQqnNxfgzBimwOcmQw2IGkP63zU3A84x_DkSg7w6tJ-X4y3xs53OYJ_u6PGkdsJHGxnMkQs4BSpA8BlEkCnRZ_OrmwJ1LytzmAWTGEVzFxOPTTSQ_lb2vUEpePCEpHTgaepCD7jeEY2t-PMVIKgyYuk4_qNeb3oRFVK4RxCV4VPf8i9gw0X24XzFv_-OXh6awdcTu7VSsBzvBrPfAthYLPzwH8opP2fIjCYQAkUbuG8HTpeVSaOpDQZfUR-SdgPgoi4HJUqJsIYIVl-vIm6nloB8CRR5nblALU4XHXFx3-ORoRKywg-0oEySX1s7L2oOdGgpYj-Bb4O-mY7C60hMX8SS9qfikod9M1zjEoa7iauPVv9l34BlvH9UyYdUeOhjVuoutGTIJWOBvCcuVwyaV93V42zVjf7JdBSlt-bnNxmf8AXkxN4rI4YsjTQtIa7d7EBjSBbArIvFZYfvbLBrNp-DX16OVvhPsAD6k6SD_a&timg=&click_t=1608147126897&s_info=1324_814&wd=&eqid=f07427010004cf88000000065fda607b" alt="...">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>...</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://www.baidu.com/link?url=mYPQic8GYj9qkMjN24FE8Z4lF7jIZ5a5qO_jBpWhVOoZP1DpWj2kpKhZke0bQ3P5obxLxLmuTfa7zsIHne59UY2lo2wZVUzvMJDZyi3Xuda6UdW3CFdRSSvf-lcJD2kmn0vohZhKkYYLV_XFyx9e1Fiv2Z5Q4jP3DV6pdpA0VONu64WQsX5MHhcaw1RMArWss3cP87XvHDoy2nK1J-_BOwjGbV4LeuitLioiHfLN60FDduHJ1tXl2BDVdPmrAMTWX_VS-6wrDEkTJabsuc1JyPn4NBZO5_fUZhY6X1hApFPTXqU6X_C5zI-BPqbUU5vU-yBtgicQkz33J1a1EF3Gc5SKEr3TYmk2FVuT_5O_DOKEp91wJtnIhBRtODvBSwvgeIXeE9lSy58CAUJHEsUOEhUhyp40GanUYYuzEI6zl8iTNlY2ac0TK-KrJpeogYvVLSgYRVyt9tiLdKultDENewUjMJl_w98frvv6nfHQ7MtEmGNUvEvBHVJwHAUInH_q69RG44ytE3VTuiWmG4qAK8JAelSequSyHIgQRXbgvPYj3Ooq37AjwZV3o2J9XNTVClLh0CfV7IlM-otT4tXs7A8dnLXqL6YnA-3x_qx3BH3&timg=&click_t=1608147071146&s_info=1324_814&wd=&eqid=f07427010004cf88000000065fda607b" alt="...">
+                                <div class="caption">
+                                    <h3>Thumbnail label</h3>
+                                    <p>...</p>
+                                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+
+</div>
+{% block js %}
+
+{% endblock %}
+</body>
+</html>
